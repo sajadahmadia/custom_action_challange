@@ -1,8 +1,9 @@
-from alpine
+from ubuntu
 
 RUN apk add bash 
 
-COPY entrypoint.sh /usr/local/bin/entrypoint.sh
+COPY entrypoint.sh /entrypoint.sh
+chmod +x /entrypoint.sh
 COPY README.md README.md
 
-ENTRYPOINT [ "entrypoint.sh" ]
+ENTRYPOINT [ "/entrypoint.sh" ]
