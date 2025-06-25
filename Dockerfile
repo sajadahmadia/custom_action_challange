@@ -1,4 +1,4 @@
-from ubuntu
+from alpine
 
 RUN apk add bash 
 
